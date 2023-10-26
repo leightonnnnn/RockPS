@@ -1,2 +1,3 @@
 # RockPS
-Attempt to recreate the game of Rock, Paper, Scissors
+
+Attempting to recreate the game of Rock, Paper, Scissors
