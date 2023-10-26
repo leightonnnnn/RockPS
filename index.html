@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <script>
-        let playerChoice = prompt('Welcome to Rock, Paper, Scissors! Choose your weapon')
-        playerChoice = playerChoice.toLowerCase();
+      
         function getComputerChoice(){
             let computerChoice;
             let randNum = Math.floor(Math.random() * 3) + 1;
@@ -36,11 +35,16 @@
                 return "The computer chose paper. You won!";
             } else if (playerChoice == 'scissors' && computerChoice == 'rock'){
                 return "The computer chose rock. You lost!";
+            } else {
+                return "Invalid weapon chosen";
             }
         }   
-            
+            let i;
+            for (i = 0; i < 10; i++){
+            let playerChoice = prompt('Welcome to Rock, Paper, Scissors! Choose your weapon')
+             playerChoice = playerChoice.toLowerCase();
             alert(RockPS(playerChoice, getComputerChoice()));
-
+            }
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
