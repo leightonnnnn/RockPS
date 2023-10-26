@@ -3,11 +3,18 @@
 <head>
     <script>
         function getComputerChoice(){
-
+            let randNum = Math.random(3) + 1;
+            if (randNum == 1){
+                let computerChoice = 'Rock';
+            } else if (randNum == 2){
+                let computerChoice = 'Paper';
+            } else {
+                let computerChoice = 'Scissors';
+            }
         }
 
         function RockPS(playerChoice, computerChoice){
-            
+
         }
 
 
