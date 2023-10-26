@@ -19,23 +19,23 @@
         }
         function RockPS(playerChoice, computerChoice){
             if (playerChoice == 'rock' && computerChoice == 'rock'){
-                console.log("The computer also chose rock. It's a tie!");
+                return "The computer also chose rock. It's a tie!";
             } else if (playerChoice == 'rock' && computerChoice == 'paper'){
-                console.log("The computer chose paper. You lost!");
+                return "The computer chose paper. You lost!";
             } else if (playerChoice == 'rock' && computerChoice == 'scissors'){
-                console.log("The computer chose scissors. You won!");
+                return "The computer chose scissors. You won!";
             } else if (playerChoice == 'paper' && computerChoice == 'rock'){
-                console.log("The computer chose rock. You won!");
+                return "The computer chose rock. You won!";
             } else if (playerChoice == 'paper' && computerChoice == 'scissors'){
-                console.log("The computer chose scissors. You lost!");
+                return "The computer chose scissors. You lost!";
             } else if (playerChoice == 'paper' && computerChoice == 'paper'){
-                console.log("The computer also chose paper. It's a tie!");
+                return "The computer also chose paper. It's a tie!";
             } else if (playerChoice == 'scissors' && computerChoice == 'scissors'){
-                console.log("The computer also chose scissors. It's a tie!");
+                return "The computer also chose scissors. It's a tie!";
             } else if (playerChoice == 'scissors' && computerChoice == 'paper'){
-                console.log("The computer chose paper. You won!");
+                return "The computer chose paper. You won!";
             } else if (playerChoice == 'scissors' && computerChoice == 'rock'){
-                console.log("The computer chose rock. You lost!");
+                return "The computer chose rock. You lost!";
             }
         }   
             
