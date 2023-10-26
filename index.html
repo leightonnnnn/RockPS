@@ -5,17 +5,18 @@
         let playerChoice = prompt('Welcome to Rock, Paper, Scissors! Choose your weapon')
         playerChoice = playerChoice.toLowerCase();
         function getComputerChoice(){
-            let randNum = Math.random(3) + 1;
+            let computerChoice;
+            let randNum = Math.floor(Math.random() * 3) + 1;
+           
             if (randNum == 1){
-                let computerChoice = 'rock';
+                computerChoice = 'rock';
             } else if (randNum == 2){
-                let computerChoice = 'paper';
+                computerChoice = 'paper';
             } else {
-                let computerChoice = 'scissors';
+                computerChoice = 'scissors';
             }
             return computerChoice;
         }
-
         function RockPS(playerChoice, computerChoice){
             if (playerChoice == 'rock' && computerChoice == 'rock'){
                 console.log("It's a tie!");
@@ -36,9 +37,9 @@
             } else if (playerChoice == 'scissors' && computerChoice == 'rock'){
                 console.log("You lost!");
             }
-        }
-
-            RockPS(playerChoice, getComputerChoice);
+        }   
+            
+            console.log(RockPS(playerChoice, getComputerChoice));
 
     </script>
     <meta charset="UTF-8">
