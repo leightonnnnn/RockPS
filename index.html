@@ -23,8 +23,10 @@
                 return "Paper beats Rock! You lose.";
             } else if (playerChoice == 'rock' && computerChoice == 'scissors'){
                 return "Rock beats Scissors! You won!";
+                win = true;
             } else if (playerChoice == 'paper' && computerChoice == 'rock'){
                 return "Paper beats Rock! You won!";
+                win = true;
             } else if (playerChoice == 'paper' && computerChoice == 'scissors'){
                 return "Scissors beats Paper! You lose.";
             } else if (playerChoice == 'paper' && computerChoice == 'paper'){
@@ -33,18 +35,33 @@
                 return "The computer also chose scissors. It's a tie!";
             } else if (playerChoice == 'scissors' && computerChoice == 'paper'){
                 return "Scissors beats Paper! You won!";
+                win = true;
             } else if (playerChoice == 'scissors' && computerChoice == 'rock'){
                 return "Rock beats Scissors! You lost.";
             } else {
                 return "Invalid weapon chosen";
             }
         }   
+            let win;
+            let score = 0;
             let i;
             for (i = 0; i < 10; i++){
-            let playerChoice = prompt('Welcome to Rock, Paper, Scissors! Choose your weapon')
-             playerChoice = playerChoice.toLowerCase();
-            alert(RockPS(playerChoice, getComputerChoice()));
+                let playerChoice = prompt('Welcome to Rock, Paper, Scissors! Choose your weapon')
+                playerChoice = playerChoice.toLowerCase();
+                alert(RockPS(playerChoice, getComputerChoice()));
+                if (win){
+                    score++;
+                }
             }
+           
+            if (score >= 3) {
+                alert("You won ${score} out of 5. You won!");
+            }
+
+            if (score < 3) {
+                alert("You won ${score} out of 5. You lost.");
+            }
+
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
